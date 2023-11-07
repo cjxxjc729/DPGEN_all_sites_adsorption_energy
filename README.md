@@ -10,4 +10,4 @@ Algorithm structure schematic.
 
 # quick start
 
-首先在00.fullsite_make中使用main.nano_cat_rea_no_grid.gen_input_pwinfile.sh < input 来构建n个以位点为中心的data文件(n为位点数). 而后使用next_iter.sh 进入主循环. 进入每一个iter0x, 执行workflow.sh. 执行完毕后, 进入bad_site_count.py直至所有的点的ae误差都低于一个设定值. 通常是0.1 eV 以内
+main.nano_cat_rea_no_grid.gen_input_pwinfile.sh < input in the 00.fullsite_make directory to build n data files centered around sites, with n being the number of sites. Then use next_iter.sh to enter the main loop. Enter each iter0x and execute workflow.sh. After completion, run bad_site_count.py until the activation energy (ae) error of all points is below a set value, usually within 0.1 eV.
